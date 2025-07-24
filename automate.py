@@ -4,7 +4,7 @@ import subprocess
 
 # User input
 repo_url = input("Enter GitHub Repository URL (HTTP/SSH): ")
-docker_hub_username = "your-dockerhub-username"
+docker_hub_username = input("Enter your dockerhub username: ")
 
 # Step 1: Clone Repository
 def clone_repo():
@@ -42,4 +42,3 @@ push_to_docker_hub()
 deploy_kubernetes()
 
 print("\n🚀 Automation Complete! Your app is now live on Kubernetes! 🎉")
-
